@@ -1,8 +1,9 @@
 import express from 'express';
 import mongoose from 'mongoose';
-import bodyParser from 'body-parser';  // Import body-parser
+import bodyParser from 'body-parser';  
 import userRouter from './routes/usersRoute.js';
 import galleryItemRouter from './routes/galleryItemRoute.js';
+import categoryRouter from './routes/categoryRoute.js';
 import jwt from 'jsonwebtoken';
 import dotenv from 'dotenv';
 
@@ -45,6 +46,7 @@ mongoose.connect(connectionString)
 // Routes
 app.use("/api/users", userRouter);
 app.use("/api/gallery", galleryItemRouter);
+app.use("/api/category", categoryRouter); 
 
 // Start the server
 app.listen(5000, () => {

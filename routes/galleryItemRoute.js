@@ -5,4 +5,5 @@ const galleryItemRouter = express.Router();
 galleryItemRouter.post('/', createGalleryItems); 
 galleryItemRouter.get('/', getGalleryItems);
 
+
 export default galleryItemRouter;
