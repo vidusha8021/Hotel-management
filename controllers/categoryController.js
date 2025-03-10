@@ -1,4 +1,5 @@
 import category from '../models/category.js';
+import {isValidAdmin} from './userController.js';
 
  export function createCategory(req, res) {
     if(req.user == null){
@@ -23,7 +24,7 @@ import category from '../models/category.js';
         .catch((err) => {
             res.status(500).json({ 
                 message: "Category cration failed", 
-                error:Err
+                error:Error
             });
         })      
 }
@@ -95,11 +96,3 @@ export function updateCategory(req, res) {
         })
 }
 
-function isValidAdmin(req){
-    if(req.user == null){
-        return false
-    }if(req.user.type != "admin"){
-        return false
-    }
-    return true
-}

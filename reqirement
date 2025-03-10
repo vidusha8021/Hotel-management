@@ -1,0 +1,21 @@
+Functional Requirements
+Clients should be able to log and make a booking
+Admins should be able to cancel a booking
+Search rooms by room ID
+Add categories for rooms (Standard, Deluxe, Luxury)
+Display a gallery page for special events
+Admins should be able to block client accounts when spamming
+View all bookings and rooms
+Disable rooms for maintenance
+Each room has a max number of guests, photos, unique number, and category
+Customers should be able to view their bookings
+Feedbacks should not be displayed if not approved
+Ticketing service
+Client/Admin Features
+Clients and admins can register and login
+Clients can view available rooms filtered by options
+Gallery with description
+Manage room categories (name, description, price, max guests)
+This appears to be a comprehensive set of requirements for a hotel booking system, covering both client and admin functionality. The system should allow clients to search, book, and view rooms, while giving admins control over managing bookings, rooms, and customer accounts.
+
+
